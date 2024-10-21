@@ -1,0 +1,34 @@
+.mj-hero {
+    padding: 70px 70px 13px !important;
+    position: relative;
+    background-color: #FFF;
+
+}
+
+.mj-hero-min-height {
+    height: 154px;
+}
+
+.mj-hero-logo {
+    background:transparent;
+    width: 95px;
+    padding-bottom: 50px;
+}
+
+.mj-hero-text {
+    text-align: left;
+}
+
+.mj-hero-violator {
+    float:left;
+    padding: 0 70px 50px !important;
+    background-color: white;
+}
+
+.mj-hero-violator-text {
+    letter-spacing: 0.33px;
+    color: #959595;
+    text-transform: uppercase;
+    font-size: 11px;
+    
+}

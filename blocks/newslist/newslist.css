@@ -1,0 +1,33 @@
+.mj-newsletter-header {
+  background-color: var(--inner-bg-color);
+  padding: 40px 70px 20px;
+}
+
+.mj-header-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary-action-color);
+  text-align: center;
+}
+
+.mj-newsletter-section {
+  background-color: var(--inner-bg-color);
+  padding: 20px 70px;
+}
+
+.mj-newsletter-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-action-color);
+}
+
+.mj-newsletter-item {
+  font-size: 16px;
+  color: #333;
+  padding: 10px 0;
+}
+
+.mj-newsletter-link {
+  color: #f45e43;
+  text-decoration: none;
+}

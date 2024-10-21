@@ -1,0 +1,44 @@
+.mj-product-columns {
+  padding: 0 20px;
+}
+
+.mj-product-columns-container {
+  inner-background-color: var(--inner-bg-color);
+  padding-right: 5px;
+}
+
+.mj-product-columns-container-last {
+    padding-right: 0;
+}
+
+.mj-product-columns-img {
+  padding-bottom: 11px;
+  width: 0;
+  height: 160px;
+  css-class: product-columns-img;
+}
+
+.mj-product-columns-button {
+  padding: 0 8px 20px;
+  padding-top: 0;
+  width: 100%;
+}
+
+.mj-product-columns-text {
+  align: center;
+  font-weight: 500;
+  padding: 11px 25px;
+}
+
+.product-columns-text-wrapper {
+  text-align: center;
+  font-weight: 500;
+  padding: 11px 25px;
+  overflow: hidden;
+}
+
+.product-columns-img img {
+  display: block;
+  width: auto !important;
+  margin: 0 auto;
+}

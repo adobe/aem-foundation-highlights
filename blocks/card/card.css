@@ -1,0 +1,11 @@
+.mj-card {
+    padding: 50px;
+    position: relative;
+    background-color: #F5F5F5;
+    css-class: 'mj-card-text';
+
+}
+
+.mj-card-text p {
+    font-size: 16px;
+}

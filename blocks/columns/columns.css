@@ -1,0 +1,15 @@
+.mj-columns-col {
+    padding: 0 25px;
+}
+
+.mj-columns-col-first {
+    padding-left: 75px;
+}
+
+.mj-columns-col-last {
+    padding-right: 75px;
+}
+
+.mj-columns-text {
+    padding: 0 20px;
+}
