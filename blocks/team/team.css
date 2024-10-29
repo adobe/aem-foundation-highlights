@@ -1,0 +1,33 @@
+.mj-team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    row-gap: 40px;
+}
+
+.mj-team-card {
+    display: flex;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.mj-team-image {
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.mj-team-name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.mj-team-position {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
