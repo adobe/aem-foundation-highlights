@@ -1,0 +1,36 @@
+.statistics-topic {
+    margin-bottom: 20px;
+}
+
+.statistics-topic-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.statistics-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.statistics-icon {
+    margin-bottom: 10px;
+}
+
+.statistics-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.statistics-numbers {
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+    margin-bottom: 5px;
+}
+
+.statistics-description {
+    font-size: 14px;
+    color: #666;
+}

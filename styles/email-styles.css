@@ -24,12 +24,11 @@ mj-all {
 
 mj-section {
   css-class: "section";
-  padding-bottom: 20px;
 }
 
 mj-body {
   background-color: var(--outer-bg-color);
-  width: 750px;
+  width: 900px;
 }
 
 mj-button {

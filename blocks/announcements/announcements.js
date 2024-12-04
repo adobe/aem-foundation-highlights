@@ -1,9 +1,5 @@
 import ffetch from '../../scripts/ffetch.js'
 
-function capitalize(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
 async function buildAnnouncementSummary() {
   const result = await ffetch('/query-index.json').sheet("articles").all();
   const announcementsByMonthYear = new Map();
