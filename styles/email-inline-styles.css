@@ -34,7 +34,7 @@ p {
     font: normal normal normal 18px/26px  "Adobe Clean";
     color: #2C2C2C;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -75,5 +75,5 @@ ul {
 ul li {
     font: normal normal normal 18px/26px  "Adobe Clean";
     padding-left: 0.6em;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }

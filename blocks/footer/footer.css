@@ -1,5 +1,5 @@
 .mj-footer {
-    padding: 46px 50px 20px;
+    padding: 20px 50px 20px;
     position: relative;
     background-color: #F5F5F5;
     text-align: left;
@@ -9,7 +9,7 @@
 }
 
 .mj-footer-min-height {
-    height: 264px;
+    height: 100px;
 }
 
 .mj-footer-logo {

@@ -1,11 +1,12 @@
 export default async function decorate(block) {
   const container = block.closest('.navbar-container');
   const img = container.querySelector('img');
-  const navigationItems = [...block.children[1].children]
-    .filter((element) => element.matches('.button-container'))
-    .map((element) => {
-      const { href, textContent } = element.firstElementChild;
-      return `<mj-navbar-link href="${href}">${textContent}</mj-navbar-link>`;
+
+  // Collect navigation items
+  const navigationItems = [...block.querySelectorAll('div[data-valign="middle"] > a')]
+    .map((link) => {
+      const { href, textContent } = link;
+      return `<mj-navbar-link href="${href}" target="_self">${textContent}</mj-navbar-link>`;
     });
 
   return `

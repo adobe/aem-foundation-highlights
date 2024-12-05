@@ -41,7 +41,7 @@ async function renderAnnouncementList() {
   let mjml = ``;
 
   announcementsByMonthYear.forEach((announcements, monthYear) => {
-    mjml += `<mj-section mj-class="mj-announcement-section">
+    mjml += `<mj-section padding-bottom="50px" mj-class="mj-announcement-section">
           <mj-column>
           <mj-text mj-class="mj-announcement-title">${monthYear}</mj-text>
     ${announcements.map((n) => {

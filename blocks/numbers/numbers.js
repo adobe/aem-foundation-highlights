@@ -21,20 +21,19 @@ async function renderStatisticsFlex() {
   let mjml = `<mj-section padding="20px" background-color="#ffffff">`;
 
   statisticsByTopic.forEach((items, topic) => {
-    console.log(items);
     const mjmlItems = items.map(({ title, numbers, description, icon }) => `
       <mj-column padding-bottom="40px" padding="0 20px" mj-class="statistics-item">
-        <mj-image width="50px" src="${icon}" alt="${title}" mj-class="statistics-icon" />
-        <mj-text font-size="16px" font-weight="bold" align="center" mj-class="statistics-title">${title}</mj-text>
-        <mj-text font-size="14px" color="green" font-weight="bold" align="center" mj-class="statistics-numbers">${numbers}</mj-text>
-        <mj-text font-size="14px" align="center" mj-class="statistics-description">${description}</mj-text>
+        <mj-image padding-bottom="10px" width="60px" src="${icon}" alt="${title}" mj-class="statistics-icon" />
+        <mj-text padding-bottom="10px" font-size="18px" font-weight="bold" align="center" mj-class="statistics-title">${title}</mj-text>
+        <mj-text padding-bottom="10px" font-size="16px" color="green" font-weight="bold" align="center" mj-class="statistics-numbers">${numbers}</mj-text>
+        <mj-text font-family="Adobe Clean" font-size="14px" align="center" mj-class="statistics-description">${description}</mj-text>
       </mj-column>
     `).join("");
 
     mjml += `
       <mj-section mj-class="statistics-topic">
         <mj-column>
-          <mj-text align="center" padding-bottom="20px" font-size="20px" font-weight="bold" mj-class="statistics-topic-title">${topic}</mj-text>
+          <mj-text padding-left="50px" padding-bottom="40px" font-size="24px" font-weight="bold" mj-class="statistics-topic-title">${topic}</mj-text>
         </mj-column>
       </mj-section>
       <mj-section>

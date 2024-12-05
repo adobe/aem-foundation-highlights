@@ -28,7 +28,7 @@ mj-section {
 
 mj-body {
   background-color: var(--outer-bg-color);
-  width: 900px;
+  width: 1000px;
 }
 
 mj-button {
@@ -51,9 +51,7 @@ span.icon img {
 
 .mj-content-wrapper {
   background-color: var(--inner-bg-color);
-  padding-top: 70px;
-  padding-bottom: 100px;
-  border-bottom: 10px solid var(--outer-bg-color);
+  padding-top: 30px;
 }
 
 .mj-first {
