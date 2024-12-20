@@ -3,15 +3,10 @@
     padding: 0px 70px;
 }
 
-.mj-month-title {
+.mj-card-title {
     font-size: 20px;
     font-weight: bold;
-}
-
-.mj-card-title {
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .mj-card-meta {
@@ -24,19 +19,23 @@
     font-size: 16px;
     color: #353535;
     padding-bottom: 10px;
+    font-family: 'Adobe Clean', Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
 }
 
 .mj-card-link {
     color: #32aef5 !important;
     font-weight: 600;
     text-decoration: none;
-    font-size: 16px !important;
+    font-size: 18px !important;
+    padding-top: 10px;
 }
 
 .mj-card {
     background-color: #f7f7f7;
     border-radius: 10px;
-    padding: 20px
+    padding: 20px;
 }
 
 .mj-card a {
@@ -44,9 +43,4 @@
     color: inherit;
     display: block;
     /* Ensures the anchor wraps the entire card */
-}
-
-.mj-card:hover {
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    /* Optional hover effect */
 }

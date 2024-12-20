@@ -41,16 +41,15 @@ async function renderAnnouncementList() {
   let mjml = ``;
 
   announcementsByMonthYear.forEach((announcements, monthYear) => {
-    mjml += `<mj-section padding-bottom="10px" mj-class="mj-announcement-section">
+    mjml += `<mj-section padding-top="30px" padding-bottom="10px" mj-class="mj-announcement-section">
           <mj-column>
-          <mj-text mj-class="mj-month-title">${monthYear}</mj-text>
     ${announcements.map((n) => {
       const authors = Array.isArray(n.authors) ? n.authors.join(', ') : n.authors;
       return `
-      <mj-section mj-class="mj-card" padding-left="70px" padding-right="70px" background-color="#FFFFFF">
+      <mj-section padding-bottom="10px" padding-left="10px" padding-right="10px" background-color="#FFFFFF">
           <mj-column width="100%" align="left" mj-class="mj-card">
               <mj-text mj-class="mj-card-title">${n.title}</mj-text>
-              <mj-text mj-class="mj-card-meta">${authors}</mj-text>
+              <mj-text mj-class="mj-card-meta"><b>${monthYear}</b> - ${authors}</mj-text>
               <mj-text mj-class="mj-card-description">${n.description}</mj-text>
               <mj-text mj-class="mj-card-link">
                   <a href="${n.path}" mj-class="mj-announcement-link">Read More...</a>

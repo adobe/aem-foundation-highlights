@@ -2,6 +2,12 @@ export default function decorate (block) {
   const h1 = block.querySelector('h1')
   const img = block.querySelector('img')
 
+  // if there's no img, create an empty one
+  if (!img) {
+    img = document.createElement('img')
+    img.src = ''
+  }
+
   // get all paragraphs inside, except the first one
   const paragraphs = [...block.querySelectorAll('p')].slice(1).map(p => {
     return `<mj-text mj-class="mj-hero-violator-text" align="center">${p.innerHTML}</mj-text>`
@@ -26,8 +32,8 @@ export default function decorate (block) {
                   h1.outerHTML
                 }</mj-text>
                 <mj-image mj-class="mj-hero-logo" width="${max_width}" align="center" src="${
-                  img.src
-                }" />
+    img.src
+  }" />
             </mj-column>
         </mj-section>
         <mj-section mj-class="mj-hero-violator">

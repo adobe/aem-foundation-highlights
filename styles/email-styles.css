@@ -51,7 +51,7 @@ span.icon img {
 
 .mj-content-wrapper {
   background-color: var(--inner-bg-color);
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 .mj-first {

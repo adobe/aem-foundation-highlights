@@ -1,6 +1,6 @@
 .mj-navbar-logo {
-    width: 120px;
-    padding-bottom: 10px;
+    width: 130px;
+    padding-bottom: 20px;
 }
 
 .mj-navbar-container {
@@ -15,7 +15,7 @@ mj-navbar-link {
     color: rgb(6, 6, 6);
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 1000px;
-    padding: 10px;
+    padding: 30px;
 }
