@@ -53,10 +53,10 @@ export default function decorate(block) {
   const videoControlData = createVideoControl(imgHeight, imgWidth);
   return `
     <mj-raw mj-class="mj-video" >
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;margin-top:-20px">
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
         <tbody>
           <tr>
-            <td style="padding-right:70px;padding-left:70px;width:610px;padding-bottom:40px">
+            <td style="padding-right:70px;padding-left:200px;width:610px;padding-bottom:40px;">
               <a href="${a.href}" target="_blank" rel="noopener noreferrer">        
                 <img src="${img.src}"  class="video" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:14px;" width="610" />   
                 <img src="${videoControlData}" class="video-control" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:14px;position:relative;margin-top:-${(610 * imgHeight) / imgWidth}px" width="610"/>
