@@ -11,17 +11,25 @@
 
 .mj-hero-logo {
     background:transparent;
-    width: 95px;
-    padding-bottom: 50px;
+    width: 500px;
+    padding-bottom: 10px;
+}
+
+.mj-hero-logo-text {
+    letter-spacing: 0.33px;
+    color: #959595;
+    text-transform: uppercase;
+    font-size: 11px;
 }
 
 .mj-hero-text {
-    text-align: left;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .mj-hero-violator {
     float:left;
-    padding: 0 70px 50px !important;
+    padding: 0 70px 20px !important;
     background-color: white;
 }
 
@@ -30,5 +38,4 @@
     color: #959595;
     text-transform: uppercase;
     font-size: 11px;
-    
 }

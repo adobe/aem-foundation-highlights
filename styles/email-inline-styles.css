@@ -11,7 +11,6 @@
  */
 
 h1, h2, h3, h4, h5 {
-    text-align: left;
     letter-spacing: 0;
     color: #000;
     opacity: 1;
@@ -30,7 +29,6 @@ a:hover {
 
 
 p {
-    text-align: left;
     font: normal normal normal 18px/26px  "Adobe Clean";
     color: #2C2C2C;
     margin-top: 0;
@@ -76,4 +74,13 @@ ul li {
     font: normal normal normal 18px/26px  "Adobe Clean";
     padding-left: 0.6em;
     padding-bottom: 5px;
+}
+
+img {
+    max-width: 600px;
+}
+
+/* center everything inside the first div inside class appear, including images */
+.appear:first-child > table > tbody > tr > td {
+    text-align: center;
 }
