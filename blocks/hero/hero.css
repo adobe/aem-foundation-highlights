@@ -1,8 +1,7 @@
 .mj-hero {
-    padding: 70px 70px 13px !important;
+    padding: 50px 70px 13px !important;
     position: relative;
     background-color: #fdfdfd;
-
 }
 
 .mj-hero-min-height {
@@ -19,16 +18,16 @@
     color: #959595;
     text-transform: uppercase;
     font-size: 11px;
+    padding-bottom: 20px;
 }
 
 .mj-hero-text {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .mj-hero-violator {
     float:left;
-    padding: 0 70px 20px !important;
+    padding: 0 70px 50px !important;
     background-color: white;
 }
 
@@ -37,4 +36,24 @@
     color: #959595;
     text-transform: uppercase;
     font-size: 11px;
+}
+
+.header-h1 {
+    font: normal normal lighter 32px/32px  "Adobe Clean";
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+
+.header-h2 {
+    font: normal normal normal 36px/40px  "Adobe Clean";
+    line-height: 1.25;
+    margin-block-start: 30px;
+    margin-block-end: 40px;
+}
+
+.header-h1, .header-h2 {
+    letter-spacing: 0;
+    color: #000;
+    opacity: 1;
 }

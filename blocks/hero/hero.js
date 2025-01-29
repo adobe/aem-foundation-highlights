@@ -15,9 +15,11 @@ export default function decorate (block) {
     <mj-wrapper padding-bottom="0">
         <mj-section mj-class="mj-hero"  >
             <mj-column width="100%" align="center">
-                <mj-text mj-class="mj-hero-text" padding-bottom="40px" align="center">
-                    <h1 width="500px">Scaling the Skyline</h1>
-                    <h2 width="500px">AEM Cloud Services Journal</h2> 
+                <mj-text mj-class="mj-hero-text" align="center" font-weight="lighter">
+                    <div class="header-h1">Scaling the Skyline</div>
+                </mj-text>
+                <mj-text mj-class="mj-hero-text" align="center" font-weight="bold">
+                    <div class="header-h2" font-weight="bold">AEM Cloud Services Journal</div> 
                 </mj-text>
             </mj-column>
         </mj-section>
@@ -34,13 +36,19 @@ export default function decorate (block) {
     <mj-wrapper padding-bottom="0">
         <mj-section mj-class="mj-hero"  >
             <mj-column width="100%" align="center">
-                <mj-text mj-class="mj-hero-text" padding-bottom="40px" align="center">
-                    <h1>Scaling the Skyline</h1>
-                    <h2>AEM Cloud Services Journal</h2> 
+                <mj-text mj-class="mj-hero-text" align="center" font-weight="lighter">
+                    <div class="header-h1">Scaling the Skyline</div>
                 </mj-text>
-                <mj-image mj-class="mj-hero-logo" width="450px" align="center" src="${
+                <mj-text mj-class="mj-hero-text" align="center" font-weight="bold">
+                    <div class="header-h2" font-weight="bold">AEM Cloud Services Journal</div> 
+                </mj-text>
+                <mj-image mj-class="mj-hero-logo" width="550px" align="center" src="${
     img.src
-  }" />
+  }" alt="AEM Cloud Logo"
+    border="0"
+    padding="0"
+    style="display: block; outline: none; text-decoration: none; max-width: 100%; height: auto; background: white;"
+    />
             </mj-column>
         </mj-section>
         <mj-section mj-class="mj-hero-violator">

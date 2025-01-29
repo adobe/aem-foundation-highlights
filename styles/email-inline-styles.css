@@ -14,8 +14,6 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 0;
     color: #000;
     opacity: 1;
-    margin-top:5px;
-    margin-bottom: 35px;
 }
 
 a {
@@ -37,21 +35,23 @@ p {
 
 h1 {
     font: normal normal lighter 36px/40px  "Adobe Clean";
-    font-weight: lighter;
     padding:0;
     margin:0;
+    margin-block-end: 40px;
+    margin-block-start: 20px;
+    text-align: center;
 }
 
 h2 {
-    font: normal normal normal 36px/40px  "Adobe Clean";
+    font: normal normal lighter 36px/40px  "Adobe Clean";
     line-height: 1.25;
-    padding-top: 20px;
+    margin-block-start: 40px;
     margin-block-end: 20px;
 }
 
 h3 {
     font: normal normal normal 28px/32px  "Adobe Clean";
-    margin-block-end: 10px;
+    margin-block-end: 20px;
     margin-block-start: 40px;
 }
 
@@ -82,6 +82,8 @@ ul li {
 
 img {
     max-width: 600px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* center everything inside the first div inside class appear, including images */

@@ -33,7 +33,7 @@ async function renderStatisticsFlex() {
     mjml += `
       <mj-section mj-class="statistics-topic">
         <mj-column>
-          <mj-text align="center" padding-bottom="20px" font-size="25px" font-weight="bold" mj-class="statistics-topic-title">${topic}</mj-text>
+          <mj-text align="center" padding-bottom="30px" font-size="25px" font-weight="normal" mj-class="statistics-topic-title">${topic}</mj-text>
         </mj-column>
       </mj-section>
       <mj-section>

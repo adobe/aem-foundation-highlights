@@ -23,8 +23,8 @@ export async function TeamMemberCard (
   return `
       <mj-column width="33%" padding="20px">
         <mj-image src="${member.Picture}" mj-class="mj-team-image" alt="${member.Name}" width="${imageSize}px" height="${imageSize}px" />
-        ${showName ? `<mj-text mj-class="mj-team-name"><strong>${member.Name}</strong></mj-text>` : ''}
-        ${showPosition ? `<mj-text mj-class="mj-team-position">${member.Position}</mj-text>` : ''}
+        ${showName ? `<mj-text mj-class="mj-team-name" align="center"><strong>${member.Name}</strong></mj-text>` : ''}
+        ${showPosition ? `<mj-text mj-class="mj-team-position" align="center">${member.Position}</mj-text>` : ''}
       </mj-column>
     `
 }
