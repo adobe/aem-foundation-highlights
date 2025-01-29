@@ -52,7 +52,7 @@ async function renderAnnouncementList() {
               <mj-text mj-class="mj-card-meta"><b>${monthYear}</b> - ${authors}</mj-text>
               <mj-text mj-class="mj-card-description">${n.description}</mj-text>
               <mj-text mj-class="mj-card-link">
-                  <a href="${n.path}" mj-class="mj-announcement-link">Read More...</a>
+                  <a href="${n.path}" mj-class="mj-announcement-link" target="_blank">Read more</a>
               </mj-text>
           </mj-column>
       </mj-section>`;
