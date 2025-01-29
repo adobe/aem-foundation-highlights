@@ -22,36 +22,54 @@ export async function TeamMemberCard (
 
   return `
       <mj-column width="33%" padding="20px">
-        <mj-image src="${member.Picture}" mj-class="mj-team-image" alt="${
-    member.Name
-  }" width="${imageSize}px" height="${imageSize}px" />
-        ${
-          showName
-            ? `<mj-text mj-class="mj-team-name"><strong>${member.Name}</strong></mj-text>`
-            : ''
-        }
-        ${
-          showPosition
-            ? `<mj-text mj-class="mj-team-position">${member.Position}</mj-text>`
-            : ''
-        }
+        <mj-image src="${member.Picture}" mj-class="mj-team-image" alt="${member.Name}" width="${imageSize}px" height="${imageSize}px" />
+        ${showName ? `<mj-text mj-class="mj-team-name"><strong>${member.Name}</strong></mj-text>` : ''}
+        ${showPosition ? `<mj-text mj-class="mj-team-position">${member.Position}</mj-text>` : ''}
       </mj-column>
     `
 }
 
 async function renderFullTeam () {
   const teamData = await fetchTeamData()
-  let mjml = `<mj-section mj-class="mj-team-section" padding-left="70px" padding-right="70px">`
+  
+  // Group team members by location
+  const teamByLocation = teamData.reduce((acc, member) => {
+    const location = member.Location || 'Unknown'
+    if (!acc[location]) {
+      acc[location] = []
+    }
+    acc[location].push(member)
+    return acc
+  }, {})
 
-  for (const member of teamData) {
-    mjml += await TeamMemberCard(member.Username, {
-      showName: true,
-      showPosition: true,
-      imageSize: 100
-    })
+  // Sort locations alphabetically
+  const sortedLocations = Object.keys(teamByLocation).sort()
+
+  let mjml = ``
+
+  for (const location of sortedLocations) {
+    mjml += `
+      <mj-section padding-left="70px" padding-right="70px" padding-bottom="20px">
+        <mj-column width="100%">
+          <mj-text mj-class="mj-location-title"><strong>${location}</strong></mj-text>
+        </mj-column>
+      </mj-section>
+    `
+    
+    // Create a section for members in this location
+    mjml += `<mj-section mj-class="mj-team-section" padding-left="70px" padding-right="70px" padding-bottom="80px">`
+    
+    for (const member of teamByLocation[location]) {
+      mjml += await TeamMemberCard(member.Username, {
+        showName: true,
+        showPosition: true,
+        imageSize: 100
+      })
+    }
+
+    mjml += `</mj-section>` // Close team section
   }
 
-  mjml += `</mj-section>`
   return mjml
 }
 
