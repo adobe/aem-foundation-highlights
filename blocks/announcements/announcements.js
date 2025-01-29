@@ -41,12 +41,12 @@ async function renderAnnouncementList() {
   let mjml = ``;
 
   announcementsByMonthYear.forEach((announcements, monthYear) => {
-    mjml += `<mj-section padding-top="30px" padding-bottom="10px" mj-class="mj-announcement-section">
+    mjml += `<mj-section padding-top="30px" padding-bottom="5px" mj-class="mj-announcement-section">
           <mj-column>
     ${announcements.map((n) => {
       const authors = Array.isArray(n.authors) ? n.authors.join(', ') : n.authors;
       return `
-      <mj-section padding-bottom="10px" padding-left="10px" padding-right="10px" background-color="#FFFFFF">
+      <mj-section padding-left="10px" padding-right="10px" background-color="#FFFFFF">
           <mj-column width="100%" align="left" mj-class="mj-card">
               <mj-text mj-class="mj-card-title">${n.title}</mj-text>
               <mj-text mj-class="mj-card-meta"><b>${monthYear}</b> - ${authors}</mj-text>
