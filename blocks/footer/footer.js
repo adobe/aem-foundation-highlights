@@ -36,6 +36,7 @@ export default async function decorate(block) {
   );
 
   return `
+    <mj-spacer height="100px" />
     <mj-section mj-class="mj-footer">
         <mj-column width="100%" align="left">
             <mj-image mj-class="mj-footer-logo" align="left" src="${logoUrl}" />
