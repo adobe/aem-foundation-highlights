@@ -3,7 +3,7 @@
     position: relative;
     background-color: #F5F5F5;
     text-align: left;
-    font: normal normal normal 11px/18px  "Adobe Clean";
+    font: normal normal normal 11px/18px  "Adobe Clean", Arial, sans-serif;
     letter-spacing: 0;
     color: #959595;
 }
@@ -20,7 +20,7 @@
 
 .mj-footer-text div {
     text-align: left;
-    font: normal normal normal 11px/18px  "Adobe Clean" !important;
+    font: normal normal normal 11px/18px  "Adobe Clean", Arial, sans-serif !important;
     letter-spacing: 0;
     color: #959595 !important;
 }

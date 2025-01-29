@@ -39,14 +39,14 @@
 }
 
 .header-h1 {
-    font: normal normal lighter 32px/32px  "Adobe Clean";
+    font: normal normal lighter 32px/32px  "Adobe Clean", Arial, sans-serif;
     padding:0;
     margin:0;
     text-align: center;
 }
 
 .header-h2 {
-    font: normal normal normal 36px/40px  "Adobe Clean";
+    font: normal normal normal 36px/40px  "Adobe Clean", Arial, sans-serif;
     line-height: 1.25;
     margin-block-start: 30px;
     margin-block-end: 40px;
